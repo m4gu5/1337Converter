@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Type here:" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label"
+        android:background="@android:drawable/editbox_background"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:hint="Type your text here"
+        android:lines="5" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/input"
+        android:layout_marginLeft="10dip"
+        android:onClick="buttonOkClicked"
+        android:text="OK" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ok"
+        android:layout_toLeftOf="@id/ok"
+        android:onClick="buttonDeleteClicked"
+        android:text="Delete" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ok"
+        android:layout_marginTop="20dip"
+        android:textColor="#00ff00"
+        android:text="1337 \\/3|25!0|\\|:" />
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label2"
+        android:gravity="top|left"
+		android:background="#000000"
+		android:textColor="#00ff00" 
+        android:lines="5" />
+
+</RelativeLayout>
